@@ -6,8 +6,6 @@
 }
 form{
     width: 100%;
-    /* background-color: #8a2be2; */
-    /* height: 200px; */
     margin-top: 50px;
     
     
@@ -38,6 +36,7 @@ label{
     padding: 10px ;
     margin-bottom: 30px;
     outline: none;
+
 }
 
 .end{
@@ -57,14 +56,4 @@ label{
 .red{
     color: red;
     border: 1px solid red;
-}
-.errorr{
-
-    text-align: center;
-    margin-top: 50px;
-    width: 100%;
-    margin: auto;
-}
-.error{
-    color:red;
 }

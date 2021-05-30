@@ -1,6 +1,8 @@
 var valid ,formlabels ,firstName ,lastName ,emaill ,password;
 
-function validation ( ){
+function validation (){
+    
+   
      valid = true;
      formLabels =document.getElementsByTagName("label");
     firstName = document.regForm.firstName.value;
@@ -37,24 +39,25 @@ function validation ( ){
     }
 
 //  emaill = document.regForm.email.value;
-//     var at = email.indexof("@");
-//     var dot =email.indexof(".");
-    
-//     if (emaill == ""){
-//         formLabels[2].innerHTML = "Email : * [required]";
-//         formLabels[2].style.color='red';
-//         valid =false;
-//     }
-//      else if (at == -1 || dot == -1 || dot < at){
-//         formLabels[2].innerHTML = "Email : * [required @ and .]";
-//         formLabels[2].style.color='red';
-//         valid =false; 
-//      }
-//     else{
-//         formLabels[2].innerHTML = "Email: "
-//         formLabels[2].style.color='black';
-//         valid = (valid) ? true : false ;  
-//     }
+//    var at = email.value.indexOf("@");
+//     var dotCom = email.value.indexOf(".com");
+//     if (email == '' ) {
+//       formLabels[1].innerHTML = "Email: *[ required ]";
+//       email.style.borderColor="red";
+//       formLabels[1].style.color= "red"
+         
+//   }
+//    else if ( at == -1 || dotCom == -1 || dotCom < at){
+//     formLabels[1].innerHTML = "Email : *[ @ and .com are required]";
+//     email.style.borderColor="red";
+//     formLabels[1].style.color= "red"
+//    }
+//    else {
+//     formLabels[1].innerHTML = "Email : "
+//     formLabels[1].style.color='black';
+//       email.style.borderColor="black";
+//     valid = (valid) ? true : false ;  
+//   }
      password = document.regForm.password.value;
 
     if (password == ""){
@@ -72,8 +75,9 @@ function validation ( ){
         formLabels[3].style.color='black';
         valid = (valid) ? true : false ;  
     }
+
+    return valid; 
     
-    return valid;
 }
 
 function clear2 (){

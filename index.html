@@ -10,20 +10,23 @@
   </head>
   <body>
 
-    <form id="form">
+    <form id="form" name="valform">
     <div class="container">
       <h2> Validation Form</h2>
       <label>  Username : </label>
-      <input id="user-name" type="text" placeholder="Username" class="style">
+      <input id="user-name" type="text" placeholder="Username" name ="user-name" class="style">
       <label>  Your Email :</label>
-     <input  id="Email" type="email" placeholder="Email" class="style" > 
+     <input  id="Email" type="text" placeholder="Email" class="style" name="email" > 
      <label id="pause">  password :</label>
-     <input id= "pass" type="password" placeholder="password"  class="style"> 
+     <input id= "pass" type="password" placeholder="password"  name ="password" class="style"> 
      <button id="submit" class="end" type="submit">  Submit   </button>
+     <br>
+     <br>
+     <input type="reset" value="Clear"  class= "end" onclick="clear2();" />
     </div>
   </form>
-    <div id="error" class="errorr"> </div>
-    <div id="secondError" class="errorr"></div>
+  
+    
    <script src="script.js"></script>
   </body>
   </html>
